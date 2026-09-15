@@ -1,7 +1,7 @@
 [project]
 name = "czech_localization"
 authors = [
-    { name = "Your Company", email = "info@example.cz" }
+    { name = "Kuban", email = "kuban.sir@gmail.com" }
 ]
 description = "Czech language, terminology and localization layer for ERPNext and HRMS"
 requires-python = ">=3.10"

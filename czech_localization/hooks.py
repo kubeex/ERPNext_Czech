@@ -1,8 +1,8 @@
 app_name = "czech_localization"
 app_title = "Czech Localization"
-app_publisher = "Your Company"
+app_publisher = "Kuban"
 app_description = "Czech language, terminology and localization layer for ERPNext and HRMS"
-app_email = "info@example.cz"
+app_email = "kuban.sir@gmail.com"
 app_license = "mit"
 
 # Installed after erpnext and hrms so its translations/customizations
