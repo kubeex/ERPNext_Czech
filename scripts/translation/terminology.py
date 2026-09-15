@@ -124,6 +124,7 @@ PHRASES = {
     "pricing rule": "Cenové pravidlo",
     "tax rule": "Daňové pravidlo",
     "payment terms template": "Šablona platebních podmínek",
+    "pick list": "Vychystávací seznam",
     "terms and conditions": "Obchodní podmínky",
     "letter head": "Hlavičkový papír",
     "email account": "E-mailový účet",

@@ -166,6 +166,7 @@ stejně, bez ohledu na to, kde v systému se objeví (žádné
 | Pause sla on status | Pozastavit SLA při stavu |
 | Payment entry | Platba |
 | Payment terms template | Šablona platebních podmínek |
+| Pick list | Vychystávací seznam |
 | Payroll entry | Zpracování mezd |
 | Pending | Čeká na vyřízení |
 | Postal code | PSČ |
@@ -250,15 +251,21 @@ stejně, bez ohledu na to, kde v systému se objeví (žádné
 ## Jak rozšiřovat pokrytí (další kola překladu)
 
 `czech_localization/czech_localization/translations/cs.csv` obsahuje
-zatím jen **tyto ověřené termíny** (247 řádků) — pokrývá klíčové
-DocTypy a texty pro zaměstnance/docházku/dovolené/směny/projekty a
-základní prodej/nákup/sklad/účetnictví, tedy přesně rozsah fáze 1.
+**14 418 ověřených překladů** — fáze 1 (247 ručně ověřených klíčových
+termínů pro DocTypy, zaměstnance/docházku/dovolené/směny/projekty a
+základní prodej/nákup/sklad/účetnictví) plus fáze 2 (14 171 řetězců
+přeložených po dávkách přes AI asistenta podle této terminologie,
+s automatickou kontrolou zachování placeholderů/HTML a promítnutím
+zpět do slovníku výše, viz commit "Add bulk Czech translations for
+remaining pending strings").
 
-Zbytek extrahovaných anglických řetězců (~14 670 položek, ze kterých
-naprostá většina jsou popisy validací, nápovědy a méně časté field
-labely) čeká nepřeložený ve
-`scripts/translation/pending_strings.csv` — CSV se třemi sloupci
-(anglicky, česky [prázdné], kontext), připravené k doplňování.
+Zbytek — **499 řetězců** ve `scripts/translation/pending_strings.csv`
+— je vědomě nepřeložený: jde o interní `snake_case` fieldnames, SQL/
+formátovací klíčová slova, samostatné nejednoznačné zkratky a pár
+poškozených/neúplných zdrojových řetězců, kde je bezpečnější nechat
+anglický originál než hádat špatný překlad (viz pravidlo 4 níže).
+CSV má tři sloupce (anglicky, česky [prázdné], kontext), připravené
+k doplňování, pokud se pro některý z nich najde jistý překlad.
 
 Doporučený postup pro další kolo:
 
