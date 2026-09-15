@@ -250,7 +250,7 @@ stejně, bez ohledu na to, kde v systému se objeví (žádné
 ## Jak rozšiřovat pokrytí (další kola překladu)
 
 `czech_localization/czech_localization/translations/cs.csv` obsahuje
-zatím jen **tyto ověřené termíny** (233 řádků) — pokrývá klíčové
+zatím jen **tyto ověřené termíny** (247 řádků) — pokrývá klíčové
 DocTypy a texty pro zaměstnance/docházku/dovolené/směny/projekty a
 základní prodej/nákup/sklad/účetnictví, tedy přesně rozsah fáze 1.
 
